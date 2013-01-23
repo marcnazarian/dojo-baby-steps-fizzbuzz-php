@@ -3,8 +3,8 @@ dojo-baby-steps-fizzbuzz-php
 
 Coding dojo "Baby Steps" applied to FizzBuzz exercise in PHP
 
-This dojo was played during a session of the Coding Dojo CARA,
-on Tuesday, January 22, 2012.
+This dojo was played with @jonathanbonzy during a session of 
+CARA Coding Dojo, on Tuesday, January 22, 2012.
 
 More about CARA: http://www.clubagilerhonealpes.org/
 
