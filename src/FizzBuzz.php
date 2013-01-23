@@ -10,7 +10,7 @@ class FizzBuzz {
     } elseif ($this->isFizz($number)) {
       return "Fizz";
     }
-    return ''.$number;
+    return $number;
   }
   
   protected function isFizz($number) {
