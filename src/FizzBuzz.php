@@ -1,15 +1,9 @@
 <?php
 
-class Foo {
+class FizzBuzz {
 
-  public function foo() {
-    return "bar";
-  }
-  
   public function displayFizzBuzz($number) {
     return 1;
   }
 
 }
-
-?>
