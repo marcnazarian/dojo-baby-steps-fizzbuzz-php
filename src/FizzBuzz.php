@@ -2,7 +2,7 @@
 
 class FizzBuzz {
 
-  public function displayFizzBuzz($number) {
+  public function getFizzBuzzNumber($number) {
     if($this->isFizzBuzz($number)) {
       return "FizzBuzz";
     } elseif ($this->isBuzz($number)) {
@@ -26,9 +26,9 @@ class FizzBuzz {
   public function getFizzBuzzList($maxNumber) {
     $fizzBuzzList = array();
     for ($counter = 1; $counter <= $maxNumber; $counter++) {
-      $fizzBuzzList[] = $this->displayFizzBuzz($counter);
+      $fizzBuzzList[] = $this->getFizzBuzzNumber($counter);
     }
-    return $fizzBuzzList; //array('1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', '9');
+    return $fizzBuzzList;
   }
 
 }

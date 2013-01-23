@@ -10,43 +10,43 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase {
   
   /** @test */
   public function number1returns1() {
-    $this->assertEquals('1', $this->fizzBuzz->displayFizzBuzz(1));
+    $this->assertEquals('1', $this->fizzBuzz->getFizzBuzzNumber(1));
   }
   
   /** @test */
   public function number3returnsFizz() {
-    $this->assertEquals('Fizz', $this->fizzBuzz->displayFizzBuzz(3));
+    $this->assertEquals('Fizz', $this->fizzBuzz->getFizzBuzzNumber(3));
   }
   
   /** @test */
   public function number5returnsBuzz() {
-    $this->assertEquals('Buzz', $this->fizzBuzz->displayFizzBuzz(5));
+    $this->assertEquals('Buzz', $this->fizzBuzz->getFizzBuzzNumber(5));
   }
   
   /** @test */
   public function number15returnsFizzBuzz() {
-    $this->assertEquals('FizzBuzz', $this->fizzBuzz->displayFizzBuzz(15));
+    $this->assertEquals('FizzBuzz', $this->fizzBuzz->getFizzBuzzNumber(15));
   }
   
   /** @test */
   public function number6returnsFizz() {
-    $this->assertEquals('Fizz', $this->fizzBuzz->displayFizzBuzz(6));
+    $this->assertEquals('Fizz', $this->fizzBuzz->getFizzBuzzNumber(6));
   }
   
   /** @test */
   public function number10returnsBuzz() {
-    $this->assertEquals('Buzz', $this->fizzBuzz->displayFizzBuzz(10));
+    $this->assertEquals('Buzz', $this->fizzBuzz->getFizzBuzzNumber(10));
   }
   
   /** @test */
   public function number30returnsFizzBuzz() {
-    $this->assertEquals('FizzBuzz', $this->fizzBuzz->displayFizzBuzz(30));
+    $this->assertEquals('FizzBuzz', $this->fizzBuzz->getFizzBuzzNumber(30));
   }
   
   /** @test */
   public function getFizzBuzzList() {
-    $fizzBuzzList = array('1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz');
-    $this->assertEquals($fizzBuzzList, $this->fizzBuzz->getFizzBuzzList(9));
+    $fizzBuzzList = array(1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16);
+    $this->assertEquals($fizzBuzzList, $this->fizzBuzz->getFizzBuzzList(16));
   }
   
 
