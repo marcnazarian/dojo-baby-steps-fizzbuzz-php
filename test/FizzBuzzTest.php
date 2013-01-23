@@ -9,5 +9,11 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase {
     $fizzBuzz = new FizzBuzz();
     $this->assertEquals('1', $fizzBuzz->displayFizzBuzz(1));
   }
+  
+  /** @test */
+  public function number3returnsFizz() {
+    $fizzBuzz = new FizzBuzz();
+    $this->assertEquals('Fizz', $fizzBuzz->displayFizzBuzz(3));
+  }
 
 }
