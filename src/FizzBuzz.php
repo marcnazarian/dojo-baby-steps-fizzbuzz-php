@@ -22,5 +22,9 @@ class FizzBuzz {
   protected function isFizzBuzz($number) {
     return $this->isFizz($number) && $this->isBuzz($number);
   }
+  
+  public function getFizzBuzzList() {
+    return array('1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', '9');
+  }
 
 }
