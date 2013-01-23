@@ -45,8 +45,8 @@ class FizzBuzzTest extends PHPUnit_Framework_TestCase {
   
   /** @test */
   public function getFizzBuzzList() {
-    $fizzBuzzList = array('1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', '9');
-    $this->assertEquals($fizzBuzzList, $this->fizzBuzz->getFizzBuzzList());
+    $fizzBuzzList = array('1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz');
+    $this->assertEquals($fizzBuzzList, $this->fizzBuzz->getFizzBuzzList(9));
   }
   
 

@@ -10,7 +10,7 @@ class FizzBuzz {
     } elseif ($this->isFizz($number)) {
       return "Fizz";
     }
-    return 1;
+    return ''.$number;
   }
   
   protected function isFizz($number) {
@@ -23,8 +23,12 @@ class FizzBuzz {
     return $this->isFizz($number) && $this->isBuzz($number);
   }
   
-  public function getFizzBuzzList() {
-    return array('1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', '9');
+  public function getFizzBuzzList($maxNumber) {
+    $fizzBuzzList = array();
+    for ($counter = 1; $counter <= $maxNumber; $counter++) {
+      $fizzBuzzList[] = $this->displayFizzBuzz($counter);
+    }
+    return $fizzBuzzList; //array('1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', '9');
   }
 
 }
